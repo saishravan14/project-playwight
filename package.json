@@ -3,7 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "testchr_devhd": "cross-env ENV_NAME=dev npx playwright test --project=chromium --headed",
+    "testfir_devhd": "cross-env ENV_NAME=dev npx playwright test --project=firefox --headed",
+    "testchr_Mobile_devhd": "cross-env ENV_NAME=dev npx playwright test --project=MobileChrome --headed",
+    "testchr_devhl": "cross-env ENV_NAME=dev npx playwright test --project=chromium",
+    "testfir_devhl": "cross-env ENV_NAME=dev npx playwright test --project=firefox",
+    "testchr_Mobile_devhl": "cross-env ENV_NAME=dev npx playwright test --project=Mobile Chrome",
+    "test_devhl": "cross-env ENV_NAME=dev npx playwright test",
+    "test_devhd": "cross-env ENV_NAME=dev npx playwright test --headed"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/saishravan14/project-playwight.git"
